@@ -1,19 +1,22 @@
 /**
  * 
  */
-package twinbee.javaBrains.SpringBoot;
+package twinbee.javaBrains.SpringBoot.database.topics;
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
  * @author matthew
  *
  */
-@RestController
+@Entity
 public class Topic {
 
-private String id, name, description;
+@Id	
+private String id;
+private String name, description;
+
 
 public String getId() {
 	return id;
@@ -25,7 +28,7 @@ public void setId(String id) {
 
 @Override
 public String toString() {
-	return "Topic [id=" + id + ", name=" + name + ", description=" + description + "]";
+	return "topic [id=" + id + ", name=" + name + ", description=" + description + "]";
 }
 
 public String getName() {
@@ -44,6 +47,13 @@ public Topic(String id, String name, String description) {
 	this.id = id;
 	this.name = name;
 	this.description = description;
+}
+
+public Topic(String id) {
+	super();
+	this.id = id;
+	this.name = id + " name";
+	this.description = id + " description";
 }
 
 public String getDescription() {

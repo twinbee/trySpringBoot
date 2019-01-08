@@ -11,12 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class RestApiApp {
+public class RestApiAppDerby {
 
 	/**
 	 * 
 	 */
-	public RestApiApp() {
+	public RestApiAppDerby() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -25,7 +25,7 @@ public class RestApiApp {
 	 */
 	
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiApp.class, args);
+		SpringApplication.run(RestApiAppDerby.class, args);
 	}
 
 }
