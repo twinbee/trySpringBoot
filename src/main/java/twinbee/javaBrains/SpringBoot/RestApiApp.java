@@ -1,7 +1,7 @@
 /**
  * 
  */
-package twinbee.trySpringBoot;
+package twinbee.javaBrains.SpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,12 +11,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class CourseApiApp {
+public class RestApiApp {
 
 	/**
 	 * 
 	 */
-	public CourseApiApp() {
+	public RestApiApp() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -25,7 +25,7 @@ public class CourseApiApp {
 	 */
 	
 	public static void main(String[] args) {
-		SpringApplication.run(CourseApiApp.class, args);
+		SpringApplication.run(RestApiApp.class, args);
 	}
 
 }

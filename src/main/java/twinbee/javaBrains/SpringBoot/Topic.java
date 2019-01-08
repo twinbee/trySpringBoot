@@ -1,7 +1,7 @@
 /**
  * 
  */
-package twinbee.trySpringBoot;
+package twinbee.javaBrains.SpringBoot;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,6 +21,11 @@ public String getId() {
 
 public void setId(String id) {
 	this.id = id;
+}
+
+@Override
+public String toString() {
+	return "Topic [id=" + id + ", name=" + name + ", description=" + description + "]";
 }
 
 public String getName() {
